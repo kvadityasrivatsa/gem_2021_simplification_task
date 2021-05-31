@@ -6,7 +6,7 @@ Code release for submission made to [GEM-Benchmark](https://gem-benchmark.com/) 
 ------------
 
 ### Dependecies
-- Python >= 3.7
+- Python 3.7
 
 ### Installation
 ``` 
