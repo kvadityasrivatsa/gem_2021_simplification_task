@@ -10,7 +10,7 @@ Code release for submission made to [GEM-Benchmark](https://gem-benchmark.com/) 
 
 ### Installation
 ``` 
-git clone
+git clone https://github.com/kvadityasrivatsa/gem_2021_simplification_task.git
 cd folder_name
 pip install --no-deps -r requirements.txt
 ```
