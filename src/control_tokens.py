@@ -9,10 +9,6 @@ from tqdm import tqdm
 
 from .util import readpickle, writepickle
 
-def setup():
-	try:
-
-
 def characterRatio(src,ref):
 	if len(src) == 0:
 		print('>>> character ratio: zero-exception')
