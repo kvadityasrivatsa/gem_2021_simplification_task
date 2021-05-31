@@ -46,6 +46,7 @@ Our model builds upon the ACCESS model proposed in [_Controllable Sentence Simpl
 
  - **KV Aditya Srivatsa** (k.v.aditya@research.iiit.ac.in)
  - **Monil Gokani** (monil.gokani@research.iiit.ac.in)
+ 
  If you have any queries, please do reach out. 
 
 ## License
