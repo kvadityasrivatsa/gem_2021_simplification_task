@@ -4,8 +4,6 @@ Code release for submission made to [GEM-Benchmark](https://gem-benchmark.com/) 
 
 ## Getting Started
 
-------------
-
 ### Dependecies
 - Python >= 3.7
 
@@ -44,5 +42,11 @@ The checkpoint for our model with the best scores is available [here](https://gi
 
 Our model builds upon the ACCESS model proposed in [_Controllable Sentence Simplification_](https://arxiv.org/abs/1910.02677) (Martin et al., 2020). 
  
+## Authors
 
+ - **KV Aditya Srivatsa** (k.v.aditya@research.iiit.ac.in)
+ - **Monil Gokani** (monil.gokani@research.iiit.ac.in)
+ If you have any queries, please do reach out. 
 
+## License
+Refer to the [LICENSE](https://github.com/kvadityasrivatsa/gem_2021_simplification_task/blob/main/LICENSE) file for more details.
