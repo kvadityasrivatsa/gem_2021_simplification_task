@@ -41,6 +41,7 @@ The checkpoint for our model with the best scores is available [here](https://gi
 
 ## Model Desciption
 (Note: The official system-desciption for the model can be found [here](https://github.com/kvadityasrivatsa/gem_2021_simplification_task))
+
 Our model builds upon the ACCESS model proposed in [_Controllable Sentence Simplification_](https://arxiv.org/abs/1910.02677) (Martin et al., 2020). 
  
 
