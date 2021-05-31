@@ -12,7 +12,7 @@ Code release for submission made to [GEM-Benchmark](https://gem-benchmark.com/) 
 ### Installation
 ``` 
 git clone https://github.com/kvadityasrivatsa/gem_2021_simplification_task.git
-cd folder_name
+cd gem_2021_simplification_task
 pip install --no-deps -r requirements.txt
 ```
 ### How to use
@@ -26,7 +26,7 @@ python3 train.py --evalset turk --ner --nbchars 0.95 --levsim 0.75 --wrdrank 0.7
 ```
 python3 train.py --evalset asset --ner --nbchars 0.95 --levsim 0.75 --wrdrank 0.75
 ```
-Generate and evaluate output
+Generate and evaluate output (on SARI score)
 - for TurkCorpus:
 ```
 python3 evaluate.py --evalset turk
@@ -35,3 +35,13 @@ python3 evaluate.py --evalset turk
 ```
 python3 evaluate.py --evalset asset
 ```
+
+## Pretrained Model
+The checkpoint for our model with the best scores is available [here](https://github.com/kvadityasrivatsa/gem_2021_simplification_task)
+
+## Model Desciption
+(Note: The official system-desciption for the model can be found [here](https://github.com/kvadityasrivatsa/gem_2021_simplification_task))
+Our model builds upon the ACCESS model proposed in [_Controllable Sentence Simplification_](https://arxiv.org/abs/1910.02677) (Martin et al., 2020). 
+ 
+
+
