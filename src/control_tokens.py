@@ -68,7 +68,7 @@ def init_spacy_model(arch):
 		model = spacy.load(arch)
 	return model
 
-def init_nltk_stopword():
+def init_nltk_stopwords():
 	try:
 		stops = nltk.corpus.stopwords.words('english')
 	except:
@@ -84,7 +84,7 @@ def add_control_tokens(initSrcDoc,initRefDoc,
 						force=False,
 						rounding=2):
 
-	stops = init_nltk_stopwrds()
+	stops = init_nltk_stopwords()
 	parser = init_spacy_model('en_core_web_sm')
 	logRank = buildRank('data/resources/FastTextWordRank.pkl')
 

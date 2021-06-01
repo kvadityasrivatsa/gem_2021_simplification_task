@@ -31,6 +31,10 @@ def scoreCheckpoint(checkpointsDir, dataset, res, deviceCount,
 		for filename in os.listdir(checkpointsDir):
 
 			filePath = os.path.join(checkpointsDir,filename)
+
+			if filePath in seenFiles:
+				continue
+
 			if not re.match('checkpoint[0-9]+\.pt',filename) and filePath!=bestPath:
 				seenFiles.append(filePath)
 				# os.remove(filePath)	
@@ -38,8 +42,10 @@ def scoreCheckpoint(checkpointsDir, dataset, res, deviceCount,
 
 			if filePath not in seenFiles:	# new valid chackpoint found
 
-				fileMakeTime = datetime.datetime.fromtimestamp(os.path.getmtime(path))
+				fileMakeTime = datetime.datetime.fromtimestamp(os.path.getmtime(filePath))
 				if datetime.datetime.now() - fileMakeTime < datetime.timedelta(seconds=readWaitTime):
+					print('not time yet')
+					print(datetime.datetime.now() - fileMakeTime)
 					continue
 				else:
 					seenFiles.append(filePath)
@@ -68,7 +74,7 @@ fairseq-generate {evalDataPath} --path {filePath} \
 				scoringData = [{'src':inSample[0],'pred':outSample,'ref':inSample[1]} for inSample, outSample in zip(dataset,output)] 
 				sariScore = scoreOutput(scoringData,evalset=res.evalset,split=split,device=deviceCount-1)
 
-				newBest = sariScore['mean'] > bestScore
+				newBest = sariScore > bestScore
 				if newBest:
 					bestScore = sariScore
 					# shutil.move(filePath,bestPath)

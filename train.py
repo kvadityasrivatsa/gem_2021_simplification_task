@@ -28,6 +28,11 @@ if __name__ == "__main__":
 	parser.add_argument('--decoder-embed-path', action='store', dest='decoder_embed_path', type=str, default='data/resources/wiki-news-300d-1M.txt',
 						help="path to pretrained embeddings file (default: 'data/resources/wiki-news-300d-1M.txt')")
 
+	parser.add_argument('--max-tokens', action='store', dest='max_tokens', type=int, default=400,
+						help="maximum tokens per batch (adjust according to compute memory) (default: 400)")
+	parser.add_argument('--max-epoch', action='store', dest='max_epoch', type=int, default=20,
+						help="maximum training epochs (default: 20)")
+
 	parser.add_argument('--lower', action='store_true', dest='lower', default=True,
 						help="convert data to lowercase before training (default: True)")
 	parser.add_argument('--nbchars', action='store', dest='nbchars', type=float, default=None,
@@ -225,9 +230,7 @@ if __name__ == "__main__":
 				f"--seed 0"
 				]
 
-
-
-	if res.use_pretrained_embed:
+	if res.use_pretrained:
 		trainCmd.extend([f"--encoder-embed-path {res.encoder_embed_path}",
 						 f"--decoder-embed-path {res.decoder_embed_path}"])
 

@@ -3,8 +3,6 @@ flair
 spacy
 nltk
 wget
-torch==1.7.0
-numpy==1.20.3
 fairseq@git+https://github.com/pytorch/fairseq@v0.10.0
 datasets@git+https://github.com/huggingface/datasets.git@a5e45816a72fbb20dc9122f88238ef8acba43ee3
 easse@git+https://github.com/feralvam/easse.git
