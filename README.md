@@ -35,7 +35,7 @@ python3 evaluate.py --evalset asset
 ```
 
 ## Pretrained Model
-The checkpoint for our model with the best scores is available [here](https://github.com/kvadityasrivatsa/gem_2021_simplification_task)
+The checkpoint for our model with the best scores is available [here](https://iiitaphyd-my.sharepoint.com/:f:/g/personal/k_v_aditya_research_iiit_ac_in/ElTlSDdmVd9Mpf96ZD40cW8BKGxynC9vxdnXbgxdt_GujQ?e=4SkNjp)
 
 ## Model Desciption
 (Note: The official system-desciption for the model can be found [here](https://github.com/kvadityasrivatsa/gem_2021_simplification_task))
