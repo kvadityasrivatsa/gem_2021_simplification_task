@@ -11,7 +11,7 @@ Code release for submission made to [GEM-Benchmark](https://gem-benchmark.com/) 
 ``` 
 git clone https://github.com/kvadityasrivatsa/gem_2021_simplification_task.git
 cd gem_2021_simplification_task
-pip install --no-deps -r requirements.txt
+./install.sh
 ```
 ### How to use
 Train the submission model on WikiLarge 
